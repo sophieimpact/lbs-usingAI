@@ -248,12 +248,30 @@ html,body{background:#0a0a0a;font-family:'Pretendard',-apple-system,sans-serif;c
 .identity-eq .eq{color:var(--text-dim);font-size:38pt;margin:0 16px;}
 .identity-eq .pill2{background:var(--green);color:var(--bg);padding:6px 26px;border-radius:14px;display:inline-block;margin-top:14px;}
 
-/* ========== Dialogue — Slide 19 ========== */
+/* ========== Dialogue — Slide 20 ========== */
 .dia{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;flex:1;}
 .dia .qbox{background:var(--card);border:1px solid var(--border-soft);border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:18px;}
 .dia .qbox .qn{font-family:'JetBrains Mono',monospace;font-size:26pt;font-weight:700;color:var(--accent);min-width:44px;}
 .dia .qbox .qt{font-size:17pt;font-weight:700;color:var(--text);line-height:1.4;}
 .dia .qbox .qt .ac{color:var(--accent);}
+
+/* ========== Keywords — Slide 19 수다 키워드 ========== */
+.keywords{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:32px;flex:1;align-content:center;}
+.keywords .kwitem{display:flex;align-items:baseline;gap:12px;background:var(--card);border:1px solid var(--border-soft);border-radius:12px;padding:16px 22px;font-size:16pt;line-height:1.4;color:var(--text);}
+.keywords .kwitem .kwn{font-family:'JetBrains Mono',monospace;font-size:13pt;font-weight:700;color:var(--accent);min-width:28px;}
+.keywords .kwitem .kwt{flex:1;}
+.keywords .kwitem .kwt b{color:var(--accent);font-weight:600;}
+.keywords .kwitem.wide{flex-basis:100%;}
+.keywords .kwitem.half{flex-basis:calc(50% - 7px);}
+
+/* ========== QR cards — Slide 21 ========== */
+.qrgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:36px;flex:1;align-items:center;justify-items:center;padding:0 60px;}
+.qrgrid .qrcard{display:flex;flex-direction:column;align-items:center;gap:18px;}
+.qrgrid .qrcard .qrlbl{font-family:'JetBrains Mono',monospace;font-size:13pt;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;}
+.qrgrid .qrcard .qrwrap{width:260px;height:260px;background:#fff;border-radius:14px;padding:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px var(--border-soft);}
+.qrgrid .qrcard .qrwrap img{width:100%;height:100%;object-fit:contain;}
+.qrgrid .qrcard .qrdesc{font-size:14pt;color:var(--text-dim);text-align:center;line-height:1.55;}
+.qrgrid .qrcard .qrdesc b{color:var(--text);}
 
 /* ========== Navigation ========== */
 .nav{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:100;padding:8px 14px;background:rgba(10,10,10,.65);border-radius:20px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
@@ -695,17 +713,52 @@ html,body{background:#0a0a0a;font-family:'Pretendard',-apple-system,sans-serif;c
   <div class="footer"><span class="sec">07 사회 · 두 정체성</span><span class="pg"><b>08</b></span></div>
 </section>
 
-<!-- 19. 09 함께 이야기 -->
+<!-- 19. 09 테크임팩트팀의 수다 키워드 -->
+<section class="slide">
+  <div class="topbar"><span class="brand">kakao!mpact</span><span class="kicker">Dialogue · <b>수다 키워드</b></span></div>
+  <div class="h1"><span class="num">09</span><span>테크임팩트팀의 <span class="ac">수다 키워드</span></span></div>
+  <div class="keywords">
+    <div class="kwitem half"><span class="kwn">01</span><span class="kwt"><b>취향(taste)·판단력</b>이 속도를 대신하는 시대</span></div>
+    <div class="kwitem half"><span class="kwn">02</span><span class="kwt"><b>AI 슬롭</b> 경계와 <b>카임다운 오리지널리티</b></span></div>
+    <div class="kwitem half"><span class="kwn">03</span><span class="kwt"><b>경청과 메모</b>가 AI 사용의 전제</span></div>
+    <div class="kwitem half"><span class="kwn">04</span><span class="kwt"><b>회고 루틴 + 가이드 만들기</b>가 비판적 사용을 강제</span></div>
+    <div class="kwitem wide"><span class="kwn">05</span><span class="kwt"><b>하네스 워킹</b> = 에이전트 + 스킬 + State 문서 + 정리된 폴더 <span style="color:var(--text-dim);font-weight:400;">(폴더 정리가 핵심 기술)</span></span></div>
+    <div class="kwitem half"><span class="kwn">06</span><span class="kwt">임계점에 다다른 모델 발전 — <b>지금이 기준을 주입할 때</b></span></div>
+    <div class="kwitem half"><span class="kwn">07</span><span class="kwt"><b>테크포임팩트</b>가 우리의 본업</span></div>
+  </div>
+  <div class="footer"><span class="sec">Dialogue / 수다 키워드</span><span class="pg"><b>09</b></span></div>
+</section>
+
+<!-- 20. 10 함께 이야기 -->
 <section class="slide">
   <div class="topbar"><span class="brand">kakao!mpact</span><span class="kicker">Dialogue · Your turn</span></div>
-  <div class="h1"><span class="num">09</span><span>함께 이야기 해보기</span></div>
+  <div class="h1"><span class="num">10</span><span>함께 이야기 해보기</span></div>
   <div class="dia">
     <div class="qbox"><div class="qn">Q1</div><div class="qt">나는 <span class="ac">어느 사분면</span>에 가장 자주 있었나?</div></div>
     <div class="qbox"><div class="qn">Q2</div><div class="qt">내 <span class="ac">취향과 판단</span>이 발휘된 적이 있었다면?</div></div>
     <div class="qbox"><div class="qn">Q3</div><div class="qt"><span class="ac">Token-to-learning</span>으로 가려면 어떻게 하면 될까?</div></div>
     <div class="qbox"><div class="qn">Q4</div><div class="qt">사업에서 AI를 <span class="ac">잘 쓰고, 잘 쓰도록 도우려면</span>?</div></div>
   </div>
-  <div class="footer"><span class="sec">Dialogue / Your turn</span><span class="pg"><b>09</b></span></div>
+  <div class="footer"><span class="sec">Dialogue / Your turn</span><span class="pg"><b>10</b></span></div>
+</section>
+
+<!-- 21. 11 더 궁금하신 크루들은 드루와~ -->
+<section class="slide">
+  <div class="topbar"><span class="brand">kakao!mpact</span><span class="kicker">More · <b>드루와</b></span></div>
+  <div class="h1"><span class="num">11</span><span>더 궁금하신 크루들은 <span class="ac">드루와~</span></span></div>
+  <div class="qrgrid">
+    <div class="qrcard">
+      <div class="qrlbl">원문 자료 공유</div>
+      <div class="qrwrap"><img src="qr-readings.png" alt="원문 자료 공유 QR"></div>
+      <div class="qrdesc"><b>사전 읽을거리 & 출처</b><br>Google Doc · 자세한 자료 묶음</div>
+    </div>
+    <div class="qrcard">
+      <div class="qrlbl">테크임팩트 팀 수다</div>
+      <div class="qrwrap"><img src="qr-chat.png" alt="테크임팩트 팀 수다 QR"></div>
+      <div class="qrdesc"><b>대담 풀버전·NotebookLM</b><br>수다 전문 · 키워드 맥락</div>
+    </div>
+  </div>
+  <div class="footer"><span class="sec">More information</span><span class="pg"><b>11</b></span></div>
 </section>
 
 </div>
