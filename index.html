@@ -405,7 +405,39 @@ html,body{background:#0a0a0a;font-family:'Pretendard',-apple-system,sans-serif;c
   </div>
 </section>
 
-<!-- 7. 03 자신감의 역설 2x2 -->
+<!-- 7. POP QUIZ — AI Slop (문제) -->
+<section class="slide" style="padding:0;justify-content:center;align-items:center;">
+  <div class="pop-bg"></div>
+  <div class="pop-stamp">POP<br>QUIZ<br>· 02 ·</div>
+  <div class="pop-card">
+    <div class="pop-meta">— intermission · question —</div>
+    <div class="pop-title">Q.</div>
+    <div class="pop-body">
+      생성형 인공지능(AI)을 이용해 대량으로 양산되는 <b>영양가 없고 질 낮은 디지털 콘텐츠</b>를 뜻하는 이 말은 <span class="ac">무엇</span>일까요?
+    </div>
+  </div>
+  <div class="pop-foot">— POP QUIZ · 슬롭 편 · 문제 —</div>
+</section>
+
+<!-- 8. POP QUIZ — AI Slop (정답) -->
+<section class="slide" style="padding:0;justify-content:center;align-items:center;">
+  <div class="pop-bg"></div>
+  <div class="pop-stamp">POP<br>QUIZ<br>· 02 ·</div>
+  <div class="pop-card pop-answer">
+    <div class="pop-meta">— intermission · answer —</div>
+    <div class="kick">정답</div>
+    <div class="word" style="font-size:88pt;">AI Slop</div>
+    <div class="en">슬롭 · slop</div>
+    <div class="desc">
+      원래 <b>음식물 찌꺼기·돼지 사료</b>를 의미하던 말.<br>
+      AI가 인터넷 공간을 <b>무의미한 정보 쓰레기장</b>으로 만들고 있다는 비판적 의미.<br>
+      <span style="color:var(--text-faint);font-size:13pt;">2025 Merriam-Webster · The Economist 올해의 단어</span>
+    </div>
+  </div>
+  <div class="pop-foot">— POP QUIZ · 슬롭 편 · 정답 —</div>
+</section>
+
+<!-- 9. 03 자신감의 역설 2x2 -->
 <section class="slide">
   <div class="topbar"><span class="brand">kakao!mpact</span><span class="kicker">04 창의 · <b>자신감의 역설</b></span></div>
   <div class="h1-sm"><span class="num">03</span><span>자신감의 역설 — <span class="ac">비판적 사고는 언제 발생하는가?</span></span></div>
@@ -453,38 +485,6 @@ html,body{background:#0a0a0a;font-family:'Pretendard',-apple-system,sans-serif;c
   </div>
   <div class="src">출처 · Lee, Sarkar et al., "The Impact of Generative AI on Critical Thinking", CHI 2025 · Microsoft Research × CMU · N=319, 936 사례</div>
   <div class="footer"><span class="sec">04 창의 · 자신감의 역설</span><span class="pg"><b>03</b></span></div>
-</section>
-
-<!-- 8. POP QUIZ — AI Slop (문제) -->
-<section class="slide" style="padding:0;justify-content:center;align-items:center;">
-  <div class="pop-bg"></div>
-  <div class="pop-stamp">POP<br>QUIZ<br>· 02 ·</div>
-  <div class="pop-card">
-    <div class="pop-meta">— intermission · question —</div>
-    <div class="pop-title">Q.</div>
-    <div class="pop-body">
-      생성형 인공지능(AI)을 이용해 대량으로 양산되는 <b>영양가 없고 질 낮은 디지털 콘텐츠</b>를 뜻하는 이 말은 <span class="ac">무엇</span>일까요?
-    </div>
-  </div>
-  <div class="pop-foot">— POP QUIZ · 슬롭 편 · 문제 —</div>
-</section>
-
-<!-- 9. POP QUIZ — AI Slop (정답) -->
-<section class="slide" style="padding:0;justify-content:center;align-items:center;">
-  <div class="pop-bg"></div>
-  <div class="pop-stamp">POP<br>QUIZ<br>· 02 ·</div>
-  <div class="pop-card pop-answer">
-    <div class="pop-meta">— intermission · answer —</div>
-    <div class="kick">정답</div>
-    <div class="word" style="font-size:88pt;">AI Slop</div>
-    <div class="en">슬롭 · slop</div>
-    <div class="desc">
-      원래 <b>음식물 찌꺼기·돼지 사료</b>를 의미하던 말.<br>
-      AI가 인터넷 공간을 <b>무의미한 정보 쓰레기장</b>으로 만들고 있다는 비판적 의미.<br>
-      <span style="color:var(--text-faint);font-size:13pt;">2025 Merriam-Webster · The Economist 올해의 단어</span>
-    </div>
-  </div>
-  <div class="pop-foot">— POP QUIZ · 슬롭 편 · 정답 —</div>
 </section>
 
 <!-- 10. 04 판단력과 취향 — AI Slop의 안전망 -->
@@ -773,7 +773,7 @@ html,body{background:#0a0a0a;font-family:'Pretendard',-apple-system,sans-serif;c
 
 <script>
 const slides=[...document.querySelectorAll('.slide')];
-const popIndices=[2,3,7,8]; // 0-indexed: slides 3,4,8,9 → POP QUIZ pages
+const popIndices=[2,3,6,7]; // 0-indexed: slides 3,4,7,8 → POP QUIZ pages
 const nav=document.getElementById('nav');
 let cur=0;
 slides.forEach((_,i)=>{
